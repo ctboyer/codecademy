@@ -2,8 +2,6 @@ let userName = prompt('Please enter your user name', '<name goes here>');//askin
 if (userName == null) { alert ('you did not enter a user name');}
 else {alert (`'Hello, $userName`);}
 
-userName ? console.log ('Hello ' + userName + '!' ) : console.log ('Hello!');//greeting the user
-
 let userQuestion = prompt ('Please ask me a question', '<user question goes here>');//prompting the user to ask their question
 
 console.log(userName + 'asked ');//returns the users question
