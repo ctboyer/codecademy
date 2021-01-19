@@ -1,6 +1,6 @@
 let raceNumber = Math.floor(Math.random() * 1000);//generate random race number between 1 and 1000
 
-let registeredEarly = prompt ('did you register early?')
+let registeredEarly = prompt ('did you register early?')//finding out their registration status
   if (registeredEarly=Yes.toLowerCase()) {
     console.log ('Thank you for pre-registering')
   }
@@ -8,23 +8,23 @@ let registeredEarly = prompt ('did you register early?')
     console.log ('No worries, we can get you signed up today') 
   }
   else{
-    console.log ('Please answers Yes or No')
+    console.log ('Please answer Yes or No')
   }
 
 let Age = prompt ('Please enter your age');
 
-if (Age >= 18 && registeredEarly == true) {
+if (Age >= 18 && registeredEarly == true) { //conditions for adults over 18 who pre-registered
   console.log (raceNumber * 1000)
 }
-else if (Age > 18 && registeredEarly == false) {
+else if (Age > 18 && registeredEarly == false) { //conditions for adults over 18 who have not pre-registered
   console.log('The rates starts at 11:00 am, your race  number is ' +raceNumber)
 }
 
-else if (Age < 18) {
+else if (Age < 18) { //conditions for those under 18
   console.log('Runners under 18 start at 12:30 pm, your race number is ' + raceNumber);}
 
 else{
-console.log ('Please see the registration desk');}
+console.log ('Please see the registration desk');} //what to do with 18 year olds is not defined by the instructions
 
 
 
