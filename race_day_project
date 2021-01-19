@@ -1,10 +1,10 @@
 let raceNumber = Math.floor(Math.random() * 1000);//generate random race number between 1 and 1000
 
 let registeredEarly = prompt ('did you register early?')
-  if (registeredEarly=Yes.lower()) {
+  if (registeredEarly=Yes.toLowerCase()) {
     console.log ('Thank you for pre-registering')
   }
-  if (registeredEarly=No.lower()) {
+  if (registeredEarly=No.toLowerCas()) {
     console.log ('No worries, we can get you signed up today') 
   }
   else{
